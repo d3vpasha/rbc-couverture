@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!--
+  =====================================================================
+  RBC COUVERTURE - site vitrine (v1, maquette de prospection)
+
+  INFOS VERIFIEES (relevees sur l'enseigne du client) :
+    - Raison sociale ...... RBC COUVERTURE
+    - Gerant .............. DUBAL Christophe
+    - Telephone ........... 06 66 13 97 12
+    - E-mail actuel ....... dubal.rbccouverture@gmail.com
+
+  TODO - A VALIDER AVEC LE CLIENT AVANT MISE EN LIGNE :
+    1.  [VILLE] / [DEPARTEMENT] / liste des communes  -> rechercher "[VILLE]" dans ce fichier
+    2.  Adresse postale de l'entreprise (bloc JSON-LD + footer)
+    3.  SIRET, forme juridique, assurance decennale (nom assureur + n° de contrat)
+    4.  Annee de creation / nombre d'annees d'experience
+    5.  Horaires d'ouverture
+    6.  Photos de chantiers (section Realisations, 6 emplacements)
+    7.  Avis clients : les 3 temoignages sont des EXEMPLES DE MISE EN PAGE.
+        Ne jamais publier : les remplacer par de vrais avis Google ou supprimer la section.
+    8.  Certifications eventuelles (RGE, Qualibat) - a supprimer si non detenues
+    9.  Domaine definitif -> remplacer https://rbc-couverture.fr dans canonical, OG et sitemap.xml
+    10. Adresse e-mail pro (contact@rbc-couverture.fr) une fois le domaine achete :
+        remplacer dubal.rbccouverture@gmail.com partout (HTML + assets/js/main.js)
+  =====================================================================
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Couvreur à [VILLE] – RBC Couverture | Devis gratuit – 06 66 13 97 12</title>
+<meta name="description" content="RBC Couverture, couvreur zingueur à [VILLE]. Toiture neuve, rénovation, zinguerie, démoussage, recherche de fuite. Devis gratuit sous 48 h. Christophe Dubal – 06 66 13 97 12.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="RBC Couverture">
+<link rel="canonical" href="https://rbc-couverture.fr/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="RBC Couverture">
+<meta property="og:title" content="Couvreur à [VILLE] – RBC Couverture">
+<meta property="og:description" content="Toiture neuve, rénovation, zinguerie, démoussage, recherche de fuite. Devis gratuit. 06 66 13 97 12.">
+<meta property="og:url" content="https://rbc-couverture.fr/">
+<meta property="og:image" content="https://rbc-couverture.fr/assets/img/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0e0f11">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.className += " js";</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RoofingContractor",
+  "name": "RBC Couverture",
+  "description": "Couvreur zingueur : toiture neuve, rénovation de couverture, zinguerie, démoussage, isolation de combles et recherche de fuite.",
+  "url": "https://rbc-couverture.fr/",
+  "image": "https://rbc-couverture.fr/assets/img/og-cover.png",
+  "logo": "https://rbc-couverture.fr/assets/img/logo.svg",
+  "telephone": "+33666139712",
+  "email": "dubal.rbccouverture@gmail.com",
+  "founder": { "@type": "Person", "name": "Christophe Dubal" },
+  "areaServed": "[VILLE] et communes environnantes",
+  "priceRange": "$$",
+  "currenciesAccepted": "EUR",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Le devis est-il vraiment gratuit ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. Le déplacement, le diagnostic de votre toiture et le devis détaillé sont gratuits et sans engagement. Le devis vous est remis sous 48 heures après la visite." } },
+    { "@type": "Question", "name": "Combien coûte la rénovation d'une toiture ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Le prix dépend de la surface, de la pente, du matériau de couverture et de l'état de la charpente. Seule une visite sur place permet de chiffrer précisément. Le devis détaille poste par poste la main d'œuvre et les fournitures." } },
+    { "@type": "Question", "name": "Intervenez-vous en urgence en cas de fuite ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. En cas d'infiltration ou de tuiles arrachées après une tempête, une mise en sécurité provisoire est réalisée rapidement, puis la réparation définitive est planifiée." } },
+    { "@type": "Question", "name": "Puis-je bénéficier de la TVA à 10 % ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Les travaux de rénovation de couverture sur un logement achevé depuis plus de deux ans relèvent en général de la TVA réduite à 10 %. Une attestation simplifiée vous est fournie avec le devis." } },
+    { "@type": "Question", "name": "Quelles garanties sur les travaux ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Les travaux de couverture sont couverts par l'assurance responsabilité civile professionnelle et la garantie décennale. L'attestation en cours de validité est jointe au devis." } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="tete">
+  <div class="wrap">
+    <a class="marque" href="#haut" aria-label="RBC Couverture, retour en haut de page">
+      <svg viewBox="0 0 200 150" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 136 L100 26 L186 136"/>
+          <path d="M34 100 L44 136"/>
+          <path d="M166 100 L156 136"/>
+          <path d="M144 32 L153 30 L158 92 L149 94 Z"/>
+          <path d="M76 124 L114 62"/>
+          <path d="M102 54 L132 68"/>
+          <path d="M124 124 L86 62"/>
+          <path d="M98 54 L68 68"/>
+          <path d="M86 98 L114 98"/>
+          <path d="M89 108 L111 108"/>
+        </g>
+      </svg>
+      <span class="marque-txt">
+        <span class="marque-nom">RBC Couverture</span>
+        <span class="marque-sous">Couvreur zingueur</span>
+      </span>
+    </a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#services">Services</a>
+      <a href="#zone">Zone d'intervention</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#avis">Avis</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="tel-tete" href="tel:+33666139712">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      06 66 13 97 12
+    </a>
+  </div>
+</header>
+
+<main id="haut">
+
+  <!-- ============================================= HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="chapeau">Artisan couvreur — <span class="ph">[VILLE]</span> et alentours</p>
+      <h1>Votre toiture entre les mains d'un <em>artisan</em>, pas d'un intermédiaire</h1>
+      <p class="hero-txt">
+        RBC Couverture réalise vos travaux de couverture et de zinguerie :
+        toiture neuve, rénovation complète, gouttières, démoussage et recherche de fuite.
+        Christophe Dubal se déplace lui-même, chiffre lui-même, et suit le chantier du début à la fin.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-plein" href="tel:+33666139712">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          06 66 13 97 12
+        </a>
+        <a class="btn btn-vide" href="#contact">Demander un devis gratuit</a>
+      </div>
+
+      <div class="atouts">
+        <div class="atout"><strong>Devis gratuit</strong><span>Réponse sous 48 h</span></div>
+        <div class="atout"><strong>Artisan local</strong><span>Un seul interlocuteur</span></div>
+        <div class="atout"><strong>Urgence fuite</strong><span>Mise en sécurité rapide</span></div>
+        <div class="atout"><strong>Garantie décennale</strong><span class="ph">[à confirmer]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="entete rev">
+        <p class="chapeau">Nos prestations</p>
+        <h2>Tout ce qui touche à votre toit</h2>
+        <p>De la tuile cassée à la réfection complète de la couverture, RBC Couverture intervient sur maisons individuelles, dépendances et petits bâtiments.</p>
+      </div>
+
+      <div class="grille-services">
+        <article class="service rev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12 12 3l10 9"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+          <h3>Couverture neuve</h3>
+          <p>Pose complète sur construction neuve ou extension : liteaunage, écran sous-toiture, tuiles ou ardoises, faîtage et rives.</p>
+        </article>
+        <article class="service rev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13 12 4l9 9"/><path d="M6 11v9h12v-9"/><path d="m9 15 2 2 4-4"/></svg>
+          <h3>Rénovation de toiture</h3>
+          <p>Réfection partielle ou totale, remplacement des tuiles cassées, reprise du faîtage, traitement de la charpente apparente.</p>
+        </article>
+        <article class="service rev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h14a2 2 0 0 1 2 2v3"/><path d="M3 7v4a2 2 0 0 0 2 2h9"/><path d="M19 12v6a2 2 0 0 1-2 2h-3"/><path d="M12 17h4"/></svg>
+          <h3>Zinguerie &amp; gouttières</h3>
+          <p>Pose et remplacement de gouttières, chéneaux, descentes, solins et abergements en zinc ou aluminium.</p>
+        </article>
+        <article class="service rev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s5 5.5 5 9a5 5 0 0 1-10 0c0-3.5 5-9 5-9z"/><path d="M9.5 13a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+          <h3>Démoussage &amp; traitement</h3>
+          <p>Nettoyage de la couverture, démoussage, application d'un traitement hydrofuge pour prolonger la vie des tuiles.</p>
+        </article>
+        <article class="service rev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12 12 4l9 8"/><path d="M6 11v9h12v-9"/><path d="M8 15h8M8 18h8"/></svg>
+          <h3>Isolation de combles</h3>
+          <p>Isolation des combles perdus ou aménagés en complément des travaux de couverture, pour arrêter les déperditions par le toit.</p>
+        </article>
+        <article class="service rev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v3l2 1.5"/></svg>
+          <h3>Recherche de fuite</h3>
+          <p>Diagnostic de l'origine d'une infiltration, mise en sécurité provisoire puis réparation durable du point faible.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= ZONE -->
+  <section id="zone">
+    <div class="wrap">
+      <div class="zone">
+        <div class="rev">
+          <p class="chapeau">Zone d'intervention</p>
+          <h2>Un couvreur près de chez vous</h2>
+          <p>RBC Couverture intervient à <span class="ph">[VILLE]</span> et dans les communes du secteur. Le déplacement pour établir le devis est gratuit sur toute la zone.</p>
+          <!-- TODO : remplacer par les vraies communes couvertes, fournies par le client -->
+          <ul class="communes">
+            <li class="ph">[Commune 1]</li>
+            <li class="ph">[Commune 2]</li>
+            <li class="ph">[Commune 3]</li>
+            <li class="ph">[Commune 4]</li>
+            <li class="ph">[Commune 5]</li>
+            <li class="ph">[Commune 6]</li>
+            <li class="ph">[Commune 7]</li>
+            <li class="ph">[Commune 8]</li>
+          </ul>
+          <p style="margin-top:22px">Votre commune n'apparaît pas ? Appelez le <a href="tel:+33666139712">06 66 13 97 12</a>, c'est probablement dans le secteur.</p>
+        </div>
+        <div class="carte-zone rev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <span class="rayon"><span class="ph">[30]</span> km</span>
+          <p>autour de <span class="ph">[VILLE]</span><br><span style="color:var(--gris-2);font-size:.92rem">Déplacement et devis gratuits</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= POURQUOI -->
+  <section id="pourquoi">
+    <div class="wrap">
+      <div class="entete rev">
+        <p class="chapeau">Pourquoi RBC Couverture</p>
+        <h2>Un artisan, pas un commercial</h2>
+      </div>
+      <div class="grille-pourquoi">
+        <div class="pourquoi-item rev">
+          <h3>Un seul interlocuteur</h3>
+          <p>Christophe Dubal prend l'appel, vient sur place, chiffre le chantier et le réalise. Pas de sous-traitance en cascade.</p>
+        </div>
+        <div class="pourquoi-item rev">
+          <h3>Un devis lisible</h3>
+          <p>Chaque poste est détaillé : surface, matériaux, main d'œuvre, échafaudage, évacuation des gravats. Aucun supplément surprise.</p>
+        </div>
+        <div class="pourquoi-item rev">
+          <h3>Des matériaux durables</h3>
+          <p>Tuiles, ardoises et zinc de fournisseurs reconnus, choisis pour tenir dans le temps et rester conformes au style local.</p>
+        </div>
+        <div class="pourquoi-item rev">
+          <h3>Un chantier propre</h3>
+          <p>Protection des abords, évacuation des déchets en fin de chantier, et une date de fin annoncée qui est tenue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= REALISATIONS -->
+  <section id="realisations">
+    <div class="wrap">
+      <div class="entete rev">
+        <p class="chapeau">Réalisations</p>
+        <h2>Quelques chantiers</h2>
+        <p>Les photos de vos chantiers viendront ici. Six emplacements sont prêts, au format 4:3.</p>
+      </div>
+      <!-- TODO : remplacer chaque .photo par <img src="assets/img/chantier-N.jpg" alt="..." loading="lazy"> -->
+      <div class="grille-photos">
+        <figure class="photo rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4 4 3 3-2 4 3"/></svg><span>Réfection complète de toiture</span></figure>
+        <figure class="photo rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4 4 3 3-2 4 3"/></svg><span>Pose de gouttières en zinc</span></figure>
+        <figure class="photo rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4 4 3 3-2 4 3"/></svg><span>Démoussage et hydrofuge</span></figure>
+        <figure class="photo rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4 4 3 3-2 4 3"/></svg><span>Couverture d'une extension</span></figure>
+        <figure class="photo rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4 4 3 3-2 4 3"/></svg><span>Reprise de faîtage</span></figure>
+        <figure class="photo rev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-4 4 3 3-2 4 3"/></svg><span>Recherche et réparation de fuite</span></figure>
+      </div>
+      <p class="note-photos">Astuce : une photo « avant / après » par chantier est ce qui convertit le mieux sur ce type de site.</p>
+    </div>
+  </section>
+
+  <!-- ============================================= AVIS -->
+  <!--
+    TODO IMPORTANT : ces trois avis sont des EXEMPLES DE MISE EN PAGE, pas de vrais avis.
+    Publier de faux avis est une pratique commerciale trompeuse (art. L121-2 code de la consommation).
+    A remplacer par de vrais avis Google Business Profile, ou supprimer toute la section.
+  -->
+  <section id="avis">
+    <div class="wrap">
+      <div class="entete rev">
+        <p class="chapeau">Avis clients</p>
+        <h2>Ce que disent nos clients</h2>
+        <p>Emplacement prévu pour les avis Google. À remplir dès la création de la fiche Google Business Profile.</p>
+      </div>
+      <div class="grille-avis">
+        <figure class="avis rev">
+          <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+          <blockquote class="ph">[Avis client à récupérer sur Google]</blockquote>
+          <figcaption class="ph">[Prénom N.]<span class="ph">[Commune] — [mois année]</span></figcaption>
+        </figure>
+        <figure class="avis rev">
+          <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+          <blockquote class="ph">[Avis client à récupérer sur Google]</blockquote>
+          <figcaption class="ph">[Prénom N.]<span class="ph">[Commune] — [mois année]</span></figcaption>
+        </figure>
+        <figure class="avis rev">
+          <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+          <blockquote class="ph">[Avis client à récupérer sur Google]</blockquote>
+          <figcaption class="ph">[Prénom N.]<span class="ph">[Commune] — [mois année]</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="entete rev">
+        <p class="chapeau">Questions fréquentes</p>
+        <h2>Vous vous demandez sûrement…</h2>
+      </div>
+      <div class="faq rev">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Le devis est-il vraiment gratuit ?</button>
+          <div class="faq-r"><p>Oui. Le déplacement, le diagnostic de votre toiture et le devis détaillé sont gratuits et sans engagement. Le devis vous est remis sous 48 heures après la visite.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Combien coûte la rénovation d'une toiture ?</button>
+          <div class="faq-r"><p>Le prix dépend de la surface, de la pente, du matériau de couverture et de l'état de la charpente. Seule une visite sur place permet de chiffrer précisément. Le devis détaille poste par poste la main d'œuvre et les fournitures.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Intervenez-vous en urgence en cas de fuite ?</button>
+          <div class="faq-r"><p>Oui. En cas d'infiltration ou de tuiles arrachées après une tempête, une mise en sécurité provisoire est réalisée rapidement, puis la réparation définitive est planifiée.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Puis-je bénéficier de la TVA à 10 % ?</button>
+          <div class="faq-r"><p>Les travaux de rénovation de couverture sur un logement achevé depuis plus de deux ans relèvent en général de la TVA réduite à 10 %. Une attestation simplifiée vous est fournie avec le devis.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Quelles garanties sur les travaux ?</button>
+          <div class="faq-r"><p>Les travaux de couverture sont couverts par l'assurance responsabilité civile professionnelle et la garantie décennale. L'attestation en cours de validité est jointe au devis.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="entete rev">
+        <p class="chapeau">Contact</p>
+        <h2>Demandez votre devis gratuit</h2>
+        <p>Le plus rapide reste l'appel. Sinon, remplissez le formulaire : il ouvre votre messagerie avec la demande déjà rédigée.</p>
+      </div>
+
+      <div class="contact">
+        <div class="rev">
+          <ul class="coord">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              <div><strong>Téléphone</strong><a href="tel:+33666139712">06 66 13 97 12</a></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+              <div><strong>E-mail</strong><a href="mailto:dubal.rbccouverture@gmail.com">dubal.rbccouverture@gmail.com</a></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <div><strong>Interlocuteur</strong>Christophe Dubal, gérant</div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div><strong>Horaires</strong><span class="ph">[Lun – Ven, 8 h – 18 h — à confirmer]</span></div>
+            </li>
+          </ul>
+          <div class="contact-cta">
+            <a class="btn btn-plein" href="tel:+33666139712">Appeler maintenant</a>
+            <a class="btn btn-wa" href="https://wa.me/33666139712" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a12 12 0 0 1-5.6-4.9c-.4-.7-.9-1.6-.9-2.5s.5-1.4.7-1.6c.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.2.1.4.1.6-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3 0 .1 0 .5-.2 1z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <form id="form-devis" class="rev">
+          <div class="champs">
+            <div class="champ">
+              <label for="nom">Nom et prénom</label>
+              <input id="nom" name="nom" type="text" autocomplete="name" required>
+            </div>
+            <div class="champ">
+              <label for="tel">Téléphone</label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="champ plein">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="champ plein">
+              <label for="travaux">Type de travaux</label>
+              <select id="travaux" name="travaux">
+                <option>Rénovation de toiture</option>
+                <option>Couverture neuve</option>
+                <option>Zinguerie / gouttières</option>
+                <option>Démoussage / traitement</option>
+                <option>Isolation de combles</option>
+                <option>Recherche de fuite (urgent)</option>
+                <option>Autre / je ne sais pas</option>
+              </select>
+            </div>
+            <div class="champ plein">
+              <label for="ville">Commune du chantier</label>
+              <input id="ville" name="ville" type="text">
+            </div>
+            <div class="champ plein">
+              <label for="message">Votre demande</label>
+              <textarea id="message" name="message" placeholder="Décrivez brièvement le problème ou le projet (surface, type de tuiles, étage…)."></textarea>
+            </div>
+          </div>
+          <button class="btn btn-plein" type="submit">Envoyer ma demande</button>
+          <p class="mentions-form">Ce formulaire ouvre votre logiciel de messagerie avec le message pré-rempli. Aucune donnée n'est stockée sur ce site.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <div class="pied-haut">
+      <div>
+        <div class="marque">
+          <svg viewBox="0 0 200 150" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 136 L100 26 L186 136"/>
+              <path d="M34 100 L44 136"/>
+              <path d="M166 100 L156 136"/>
+              <path d="M144 32 L153 30 L158 92 L149 94 Z"/>
+              <path d="M76 124 L114 62"/>
+              <path d="M102 54 L132 68"/>
+              <path d="M124 124 L86 62"/>
+              <path d="M98 54 L68 68"/>
+              <path d="M86 98 L114 98"/>
+              <path d="M89 108 L111 108"/>
+            </g>
+          </svg>
+          <span class="marque-txt">
+            <span class="marque-nom">RBC Couverture</span>
+            <span class="marque-sous">Couvreur zingueur</span>
+          </span>
+        </div>
+        <p style="font-size:.93rem;max-width:38ch">Travaux de couverture et de zinguerie à <span class="ph">[VILLE]</span> et dans les communes environnantes.</p>
+      </div>
+      <div>
+        <h3>Prestations</h3>
+        <ul>
+          <li><a href="#services">Couverture neuve</a></li>
+          <li><a href="#services">Rénovation de toiture</a></li>
+          <li><a href="#services">Zinguerie et gouttières</a></li>
+          <li><a href="#services">Démoussage</a></li>
+          <li><a href="#services">Recherche de fuite</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+33666139712">06 66 13 97 12</a></li>
+          <li><a href="mailto:dubal.rbccouverture@gmail.com">dubal.rbccouverture@gmail.com</a></li>
+          <li><a href="https://wa.me/33666139712" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="#contact">Demander un devis</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- TODO : mentions legales obligatoires - raison sociale exacte, forme juridique, adresse du siege,
+         SIRET, RCS ou RM, TVA intracommunautaire, assureur decennale + zone couverte, hebergeur. -->
+    <div class="pied-bas">
+      <span>© <span id="annee">2026</span> RBC Couverture — Christophe Dubal</span>
+      <span class="ph">[SIRET — Assurance décennale — Mentions légales]</span>
+    </div>
+  </div>
+</footer>
+
+<div class="barre-appel">
+  <a class="btn btn-plein" href="tel:+33666139712">Appeler</a>
+  <a class="btn btn-vide" href="#contact">Devis gratuit</a>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
