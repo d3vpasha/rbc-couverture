@@ -47,7 +47,11 @@ et listées dans le commentaire `TODO` en tête de `index.html` :
    les remplir avec de vrais avis Google, ou supprimer la section.
 8. Certifications (RGE, Qualibat) — absentes par défaut, à n'ajouter que si détenues
 9. Domaine définitif → remplacer `https://rbc-couverture.fr` dans `index.html` (canonical + OG
-   + JSON-LD) et `sitemap.xml` / `robots.txt`
+   + JSON-LD) et `sitemap.xml` / `robots.txt`.
+   Vérifié le 05/09/2026 : `rbc-couverture.fr` et `rbc-couverture.com` sont libres ;
+   `rbccouverture.fr` est déjà pris (OVH, enregistré le 18/11/2022, page « site en
+   construction », MX Microsoft 365). À clarifier avec le client avant tout achat —
+   voir `prospection-rbc-couverture.md`.
 10. E-mail pro → remplacer `dubal.rbccouverture@gmail.com` dans `index.html` et la constante
     `DESTINATAIRE` en tête de `assets/js/main.js`
 
